@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1308px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.about-us {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/bg-about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.header {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 0 0 85px;
+}
+.header__nav-item {
+  position: relative;
+  display: block;
+  padding: 0 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+}
+.header__nav-item:hover:before, .header__nav-item--active:before {
+  content: "";
+  background-color: #ffffff;
+}
+.header__nav-item:focus {
+  font-size: 16px;
+}
+.header__nav-item:before {
+  content: "";
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.slide-title--about-us {
+  color: #ffffff;
+}
+
+.description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__nav-item {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}/*# sourceMappingURL=main.css.map */
