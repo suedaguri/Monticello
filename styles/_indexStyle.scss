@@ -222,3 +222,136 @@ body {
     }
   }
 }
+
+.btn_wrap {
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.btn {
+  height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #2c4058;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 40px;
+  line-height: 50px;
+  background-color: #fff;
+  color: #2c4058;
+  font-family: 'Montserrat';
+  cursor: pointer;
+}
+.btn-2 {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    background-color:#2C4058;
+    color: white;
+    }
+}
+
+.projects-block {
+  display: flex;
+  padding: 50px 0 140px 0;
+  z-index: 50;
+  align-items: center;
+  justify-content: space-around;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+
+    & .projects-block__img:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: #7e5aff;
+      top: -70px;
+      left: 215.9px;
+      width: 90%;
+      height: 470px;
+    }
+  }
+
+    &__text {
+      display: block;
+      max-width: 480px;
+      flex-grow: 1;
+      max-height: 470px;
+      margin: 0 0 -50px 10px;
+    }
+
+}
+.projects-block__img {
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+}
+.projects-block__img:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #55b7ff;
+  top: -70px;
+  right: 260px;
+  width: 100%;
+  height: 470px;
+}
+
+.block-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  color: #4b5562;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2C4058;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+  display: block;
+}
+.subtitle--dark {
+  color: #2c4058;
+  padding: 80px 10px 100px 10px;
+}
+.subtitle--dark:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 50px);
+  border-top: 1px solid #2c4058;
+  width: 100px;
+}
+.subtitle--block {
+  color: #2c4058;
+  padding: 0 0 30px 0;
+  letter-spacing: normal;
+  text-align: left;
+}
+.location {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #2c4058;
+}
