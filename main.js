@@ -36,6 +36,38 @@ $(function () {
         },
       ],
     });
-  
   });
   
+  $(".js-slider-news").slick({
+    slidesToShow: 3,
+    infinite: true,
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 4000,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 985,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+        },
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
