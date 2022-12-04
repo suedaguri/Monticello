@@ -117,3 +117,108 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
+
+.social-block {
+  &__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    &-item {
+      width: 40px;
+      height: 40px;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 20px;
+      text-decoration: none;
+
+      &:hover,
+      &:focus{
+        background-color: white;
+        transition-duration: 0.3s;
+        font-size: 26px;
+      }
+      &:hover i,
+      &:focus i{
+        color: #7E5AFF;
+    }
+  }
+
+    &-icon {
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.scroll {
+  &__link {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 20px);
+    display: inline-block;
+    animation: 1.5s linear alternate infinite;
+
+    &:hover{
+      transition-duration: 0.8s;
+      transform: translateX(10px);
+      transform: translateY(10px);
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .slick-list {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+  .slick-dots {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px 0;
+      button {
+        color: transparent;
+        font-size: 0;
+        line-height: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+        background: transparent !important;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &.slick-active {
+        button {
+          background: #ffffff !important;
+        }
+      }
+    }
+  }
+}
