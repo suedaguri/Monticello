@@ -16,6 +16,14 @@ body {
     cursor: default;
 }
 
+.title a img{
+  &:hover, &:focus {
+  width: 103%;
+  height: 103%;
+  margin-left: -2px;
+  }
+}
+
 .about-us {
   width: 100%;
   height: 100vh;
@@ -58,13 +66,10 @@ body {
       line-height: 22px;
 
       &:hover:before,
-      &--active:before {
+      &--active:before,
+      &:focus:before {
         content: "";
         background-color: #ffffff;
-      }
-
-      &:focus {
-        font-size: 16px;
       }
 
       &:before {
@@ -167,7 +172,7 @@ body {
     display: inline-block;
     animation: 1.5s linear alternate infinite;
 
-    &:hover{
+    &:hover, &:focus{
       transition-duration: 0.8s;
       transform: translateX(10px);
       transform: translateY(10px);
@@ -213,7 +218,7 @@ body {
         border: 1px solid white;
         border-radius: 50%;
         background: transparent !important;
-        &:hover {
+        &:hover, &:focus {
           cursor: pointer;
         }
       }
@@ -274,7 +279,7 @@ body {
       z-index: -1;
       background-color: #7e5aff;
       top: -70px;
-      left: 215.9px;
+      left: 210.9px;
       width: 90%;
       height: 470px;
     }
@@ -504,7 +509,8 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  background: url(../assets/arrows.png) no-repeat 0 0;
+  background: url(../assets/arrows.png);
+  background-repeat: no-repeat;
   display: block;
   z-index: 100;
   opacity: 0.5;
@@ -515,6 +521,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s;
+  opacity: .6;
+  &:hover {
+  opacity: 1;
+  }
 }
 
 .slick-prev {
@@ -612,7 +622,7 @@ padding-top: 20px;
     padding: 20px 0;
     color: #2c4058;
 
-    &:focus {
+    &:focus, &:hover {
       outline: none;
       border-bottom: 1px solid #2c4058;
     }
@@ -685,4 +695,12 @@ padding: 51px 0 40px 0;
   left: calc(50% - 50px);
   border-top: 1px solid #2c4058;
   width: 100px;
+}
+
+.header__logo img {
+  &:hover, &:focus {
+    width: 103%;
+    height: 103%;
+    margin-left: -2px;
+    }
 }
