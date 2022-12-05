@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
-    <title>Monticello</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/4a76c04616.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="./styles/main.css">
+    <title>Monticello</title>
 </head>
 <body>
     <section id="about-us">
@@ -40,7 +40,7 @@
         <div class="container">
           <header class="header">
             <h1 class="title">
-              <a href="#" class="header__logo"><img src="./assets/logo.svg" alt="monticello-logo"/></a>
+              <a href="#about-us" class="header__logo"><img src="./assets/logo.svg" alt=" "/></a>
             </h1>
             <div class="header__nav js-nav" id="header__nav">
               <a class="header__nav-item header__nav-item--active" href="#">About Us</a>
@@ -66,7 +66,7 @@
           </header>
   
           <div class="scroll" id="scroll">
-            <a class="scroll__link" href="#projects"><img src="./assets/scroll.svg" alt="scroll"/></a>
+            <a class="scroll__link" href="#projects"><img src="./assets/scroll.svg" alt=" "/></a>
           </div>
         </div>
       </section>
@@ -205,6 +205,52 @@
           <div class="btn_wrap btn--position"><a class="btn btn-2" href="#">See More</a></div>
         </div>
       </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-block">
+          <h2 class="subtitle subtitle--dark1 subtitle--min-p subtitle--change">Get in touch</h2>
+          <div class="contact-block-wrapper">
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <i class="contact-list__icon fas fa-map-marker-alt"></i>91 Nolan Extensions Suite 670</li>
+              <li class="contact-list__item">
+                <i class="contact-list__icon fas fa-phone-alt"></i>+001 356-868-2454</li>
+              <li class="contact-list__item">
+                <i class="contact-list__icon fas fa-inbox"></i>montichello@service.com</li>
+              <li class="contact-list__item">
+                <i class="contact-list__icon far fa-clock"></i>From 07:05AM to 19:30PM</li>
+            </ul>
+            <form action="#" class="form">
+              <input class="form-label" type="text" placeholder="Name" id="Name" required/>
+              <label for="Name"></label>
+              <input class="form-label" type="email" placeholder="Email" id="Email" required/>
+              <label for="Email"></label>
+              <input class="btn btn--right" type="submit" value="submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="credit">
+              <a href="#" class="header__logo"><img src="./assets/logo.svg" alt=" "/></a>
+              <div class="copy">
+                <span class="copy-txt">Copyrights © 2020 Montichello</span>
+              </div>
+            </div>
+            <div class="social-block">
+              <ul class="social-block__list">
+                <li><a class="social-block__list-item" href="https://www.facebook.com/"><i class="social-block__list-icon fab fa-facebook-f"></i></a></li>
+                <li><a class="social-block__list-item" href="https://twitter.com/"><i class="social-block__list-icon fab fa-twitter"></i></a></li>
+                <li><a class="social-block__list-item" href="https://www.instagram.com/"><i class="social-block__list-icon fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+      </footer>
+
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="slick/slick.min.js"></script>
       <script src="./main.js"></script>

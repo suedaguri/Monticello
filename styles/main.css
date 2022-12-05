@@ -61,6 +61,10 @@ table {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #ffffff;
   text-decoration: none;
@@ -550,6 +554,7 @@ body {
 
 .gallery {
   padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 .grid {
@@ -573,4 +578,135 @@ body {
 .btn--position {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+}
+
+.contact {
+  position: relative;
+  padding-top: 300px;
+  background-image: url(../assets/Map.png);
+  background-repeat: no-repeat;
+}
+.contact-block {
+  background-image: url(../assets/bg-form.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  max-width: 772px;
+  position: relative;
+  margin: 0 auto;
+  bottom: -100px;
+}
+.contact-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-list {
+  margin: 0;
+  list-style: none;
+  width: 50%;
+}
+.contact-list__item {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #2c4058;
+  padding: 0px 10px 28px 0;
+}
+.contact-list__icon {
+  padding-right: 30px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  color: #7e5aff;
+}
+
+.form {
+  display: block;
+  width: 45%;
+  margin-top: -15px;
+}
+.form-label {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d5d9de;
+  font-size: 18px;
+  padding: 20px 0;
+  color: #2c4058;
+}
+.form-label:focus {
+  outline: none;
+  border-bottom: 1px solid #2c4058;
+}
+.form-label::-moz-placeholder {
+  color: #d5d9de;
+}
+.form-label:-ms-input-placeholder {
+  color: #d5d9de;
+}
+.form-label::placeholder {
+  color: #d5d9de;
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+}
+
+.subtitle--change {
+  padding: 51px 0 40px 0;
+}
+
+.footer {
+  width: 100%;
+  margin-top: -90px;
+  background-image: url(../assets/bg-foot.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: -30px;
+  margin-top: 80px;
+}
+
+.copy {
+  padding: 40px 0;
+}
+.copy-txt {
+  font-family: "Montserrat";
+  font-size: 14px;
+  display: inline-block;
+  color: #ffffff;
+  padding: 0 20px 0 0;
+}
+
+.btn--right {
+  display: block;
+  margin: 30px 0 30px auto;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  background-color: #2c4058;
+  transition: all 0.77s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.subtitle--dark1 {
+  color: #2c4058;
+}
+
+.subtitle--dark1:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 50px);
+  border-top: 1px solid #2c4058;
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */
