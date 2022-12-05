@@ -548,6 +548,16 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5px;
 
+  li {
+    .grid-img {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+        }
+  }
+
   &-img {
     width: 100%;
     display: block;
